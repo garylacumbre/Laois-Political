@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Laois Political</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/css/dc.min.css" type="text/css"/>
+      <link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/responsive.css" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="static/js/main/d3.min.js"></script>
+      <script type="text/javascript" src="static/js/main/crossfilter.min.js"></script>
+      <script type="text/javascript" src="static/js/main/dc.min.js"></script>
+      <script type="text/javascript" src="static/js/main/queue.min.js"></script>
+      <script type="text/javascript" src="static/js//graphs/graph.js"></script>
+   </head>
+   
+   <body>
+      <div class="page-container">
+         <header class="flex-header">
+            <h1><a href="index.html">Laois Political</a></h1> 
+            <!-- collapseable navbar adapted from bootstrap source: https://www.w3schools.com/code/tryit.asp?filename=G30O98I9WF83 -->
+            <nav>
+               <div class="container-fluid">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="button-icon"><i id="button-size" class="fas fa-bars"></i></button>
+                  </div>
+                  
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                     <ul class="nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="councillor-list.html">Councillors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         
+         <div class="main-content">
+            <div class="index-graph1">
+               <h3>Representation by Political Party</h3>
+               <div id="index-pie1"></div>
+            </div>
+            
+            <div class="bar-graphs-container">
+               <div class="bar-grap-item">
+                  <h3>Attendance</h3>
+                  <div id="index-bar1"></div>
+                  <a href="#key"><i class="fas fa-key"></i></a>
+               </div>
+            
+               <div class="bar-grap-item">
+                  <h3>Motions Proposed</h3>
+                  <div id="index-bar2"></div>
+                  <a href="#key"><i class="fas fa-key"></i></a>
+               </div>
+               
+               <div class="bar-grap-item">
+                  <h3>Successfull Motions</h3>
+                  <div id="index-bar3"></div>
+                  <a href="#key"><i class="fas fa-key"></i></a>
+               </div>
+               
+               <div class="bar-grap-item">
+                  <h3>Expenses Claimed</h3>
+                  <div id="index-bar4"></div>
+                  <a href="#key"><i class="fas fa-key"></i></a>
+               </div>
+            </div>
+          </div>
+       
+         <div class="key-section">
+            <h3 id="key-title">Key</h3>
+            
+            <div class="key-items" id="key">
+               <div class="key-container">
+                  <div class="key-sf"></div>
+                  <p><a href="aidan-mullins.html">AM - Aidan Mullins(SF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-fg"></div>
+                  <p><a href="aisling-moran.html">AMn - Aisling Moran(FG)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ind"></div>
+                  <p><a href="ben-brennan.html">BB - Ben Brennan(IND)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-sf"></div>
+                  <p><a href="caroline-stanley.html">CS - Caroline Dwane-Stanley(SF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ff"></div>
+                  <p><a href="catherine-fitzgerald.html">CF - Catherine Fitzgerald(FF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-fg"></div>
+                  <p><a href="conor-bergin.html">CB - Conor Bergin(FG)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ind"></div>
+                  <p><a href="james-kelly.html">JKy - James Kelly(IND)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-fg"></div>
+                  <p><a href="john-king.html">JK - John King(FG)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ff"></div>
+                  <p><a href="jj-fennelly.html">JF - John Joe Fennelly(FF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-fg"></div>
+                  <p><a href="mary-sweeney.html">MS - Mary Sweeney(FG)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-lab"></div>
+                  <p><a href="noel-touhy.html">NT - Noel Touhy(LAB)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ind"></div>
+                  <p><a href="ollie-clooney.html">OC - Ollie Clooney(IND)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ff"></div>
+                  <p><a href="paddy-bracken.html">PB - Paddy Bracken(FF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ff"></div>
+                  <p><a href="padraig-fleming.html">PF - Padraig Fleming(FF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ff"></div>
+                  <p><a href="paschal-mcevoy.html">PM - Paschal McEvoy(FF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-ff"></div>
+                  <p><a href="seamus-mcdonald.html">SM - Seamus McDondald(FF)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-fg"></div>
+                  <p><a href="thomasina-connell.html">TC - Thomasina Connell(FG)</a></p>
+               </div>
+               
+               <div class="key-container">
+                  <div class="key-fg"></div>
+                  <p><a href="tom-mulhall.html">TM - Tom Mulhall(FG)</a></p>
+               </div>
+               
+               <div class="key-container" id="wa-item-tablet">
+                  <div class="key-fg"></div>
+                  <p><a href="willie-aird.html">WA - Philomena Aird(FG)</a></p>
+               </div>
+            </div>      
+         </div>
+         
+         <footer>
+            <div class="footer-container">
+               <a href="https://twitter.com/garylacumbre" target="blank"><i class="fab fa-twitter-square footer-icon" alt="twitter logo"></i></a>
+               <p>&#169GaryLaCumbre</p> 
+            </div>    
+         </footer>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Laois Political</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/responsive.css" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+      <script type="text/javascript">
+         (function(){
+            emailjs.init("user_M6x8guaanNoKL81f32bTN");
+         })();
+      </script>
+   </head>
+   
+   <body>
+      <div class="page-container">
+         <header class="flex-header">
+            <h1><a href="index.html">Laois Political</a></h1> 
+            <!-- collapseable navbar adapted from bootstrap source: https://www.w3schools.com/code/tryit.asp?filename=G30O98I9WF83 -->
+            <nav>
+               <div class="container-fluid">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="button-icon"><i id="button-size" class="fas fa-bars"></i></button>
+                  </div>
+                  
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                     <ul class="nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="councillor-list.html">Councillors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         
+         <div class="main-content">
+            <div class="contact-title">
+               <h3>Contact</h3>
+            </div>
+            
+            <section class="form-container">
+               <form id="myform" method="post">
+                  <label>Name</label>
+                  <input id ="form-name" type="text" name="from_name" required/>
+                  <label>Email Address</label>
+                  <input type="text" name="from_email" required/>
+                  <label>Message</label><br>
+                  <textarea type="text" name="site_feedback" rows="7" class="text-box" required></textarea>
+                  <br><br>
+                  <button class="submit-button">Send</button>
+               </form>
+            </section>
+         </div> 
+         
+         <footer>
+            <div class="footer-container">
+               <a href="https://twitter.com/garylacumbre" target="blank"><i class="fab fa-twitter-square footer-icon" alt="twitter logo"></i></a>
+               <p>&#169GaryLaCumbre</p>
+            </div>
+         </footer>
+      </div>
+ 
+      <script src="static/js/main/sendEmail.js"></script>
+   </body>
+</html>
