@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Laois Political</title>     
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="static/css/dc.min.css" type="text/css"/>
+      <link rel="stylesheet" href="static/css/styles.css" type="text/css" />
+      <link rel="stylesheet" href="static/css/responsive.css" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300&display=swap" rel="stylesheet">   
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="static/js/main/d3.min.js"></script>
+      <script type="text/javascript" src="static/js/main/crossfilter.min.js"></script>
+      <script type="text/javascript" src="static/js/main/dc.min.js"></script>
+      <script type="text/javascript" src="static/js/main/queue.min.js"></script>
+      <script type="text/javascript" src="static/js/graphs/wa1.js"></script>
+      <script type="text/javascript" src="static/js/graphs/wa2.js"></script>
+   </head>
+   
+   <body>
+      <div class="page-container">
+         <header class="flex-header">
+            <h1><a href="index.html">Laois Political</a></h1> 
+            <!-- collapseable navbar adapted from bootstrap source: https://www.w3schools.com/code/tryit.asp?filename=G30O98I9WF83 -->
+            <nav>
+               <div class="container-fluid">
+                  <div class="navbar-header">
+                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" id="button-icon"><i id="button-size" class="fas fa-bars"></i></button>
+                  </div>
+                  
+                  <div class="collapse navbar-collapse" id="myNavbar">
+                     <ul class="nav">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="councillor-list.html">Councillors</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </header>
+         
+         <div class="main-content">
+            <div>
+               <h3>Philomena Aird (FG)</h3>
+            </div>
+            
+            <section class="bio-section">
+               <div class="bio-image">
+                  <img src="images/councillors/willie-aird.svg" alt="Willie Aird Photo">
+               </div>
+               
+               <div class="bio-contact">
+                  <p class="bio-contact-title">Contact</p>
+                  <p><i class="fas fa-map-marker-alt bio-contact-icon"></i>Nutgrove, Portlaoise, Co Laois</p>
+                  <p><a href="mailto:garylacumbre@gmail.com"><i class="fas fa-envelope-open-text bio-contact-icon"></i>philomena.aird@eircom.net</a></p>
+                  <p><i class="fas fa-phone bio-contact-icon"></i> 0876850452</p>
+               </div>
+            </section>
+            
+            <div class="councillor-graphs-container">
+               <div class="councillor-graph-item">
+                  <h3>Motions by Category</h3>
+                  <div id="wa-graph1"></div>
+               </div>
+               
+               <div class="councillor-graph-item">
+                  <h3>Successful Motions by Category</h3>
+                  <div id="wa-graph2"></div>
+               </div>
+            </div>
+            
+            <h3 class="motions-title">2019</h3>
+            <table>
+               <tr>
+                  <th class="table-date">Date</th>
+                  <th class="table-motion">Motion</th> 
+                  <th class="table-number">Number</th>
+                  <th class="table-status">Status</th>
+               </tr>
+               <tr>
+                  <td class="table-colour">Feb</td>
+                  <td>That this Council call on all dog owners to keep their dogs under control especially in the hours of darkness as farmers are now in the middle of the lambing season
+                  </td>
+                  <td>12</td> 
+                  <td>Directed to DOS</td>
+               </tr>
+               <tr>
+                  <td class="table-colour">March</td>
+                  <td>That Laois County Council supports publicly funded higher education and rejects income contingent loan (ICL) schemes and calls on the Government to affirm its commitment to providing equality of access to education for all, to reject any move to implement and income contingent loan scheme to fund third level education and to adopt a policy of ending college fees and implementing a truly publicly funded higher education system in Ireland
+                  </td>
+                  <td>15</td> 
+                  <td>Letter issued</td>
+               </tr>                
+            </table>    
+         </div>
+               
+         <footer>
+            <div class="footer-container">
+               <a href="https://twitter.com/garylacumbre" target="blank"><i class="fab fa-twitter-square footer-icon" alt="twitter logo"></i></a>
+               <p>&#169GaryLaCumbre</p> 
+            </div>    
+         </footer>
+      </div>
+   </body>
+</html>

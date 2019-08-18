@@ -1,0 +1,515 @@
+/* *********************** Main Styles ******************** */
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto Slab', serif;
+    width: 100vw;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+body, p, h4, h3, h1, a {
+    font-weight: 300;
+}
+
+.page-container {
+    width: 100vw;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+p {
+    font-size: 16px;
+}
+
+.page-container a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* *********************** Main Header ******************** */
+
+.flex-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 32px;
+    background-color: #fff;
+}
+
+h1 a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+.container-fluid {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.navbar-header {
+    width: 100%;
+    margin: 0 auto;
+    margin-right: 0 !important;
+}
+
+div.navbar-header {
+    margin: 0 !important;
+}
+
+#button-icon.navbar-toggle {
+    margin: 0 auto;
+    padding: 0;
+    min-width: 100%;
+    padding-top: 10px;
+}
+
+#button-icon {
+    font-size: 20px;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px 3px;
+}
+
+nav li a:hover {
+    color: grey;
+    background-color: #fff !important;
+}
+
+/* ***********************  Generic Content ******************** */
+
+.main-content {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 96px;
+    flex: 1;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 20px 0 20px 0;
+}
+
+#index-bar1, #index-bar2, #index-bar3, #index-bar4, 
+#am-graph1, #am-graph2, #amoran-graph1, #amoran-graph2, #bb-graph1, #bb-graph2,
+#cs-graph1, #cs-graph2, #cf-graph1, #cf-graph2, #cb-graph1, #cb-graph2, #jkelly-graph1,
+#jkelly-graph2, #jk-graph1, #jk-graph2, #jf-graph1, #jf-graph2, #ms-graph1, #ms-graph2,
+#nt-graph1, #nt-graph2, #oc-graph1, #oc-graph2, #pb-graph1, #pb-graph2, #pf-graph1, #pf-graph2,
+#pm-graph1, #pm-graph2, #sm-graph1, #sm-graph2, #tc-graph1, #tc-graph2, #tm-graph1, #tm-graph2,
+#wa-graph1, #wa-graph2 {
+    width: 160%;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px 0px 10px 0pc;
+    margin-bottom: 10px;
+}
+
+#index-bar1.dc-chart, #index-bar2.dc-chart, #index-bar3.dc-chart, #index-bar4.dc-chart, 
+#am-graph1.dc-chart, #am-graph2.dc-chart, #amoran-graph1.dc-chart, #amoran-graph2.dc-chart
+#bb-graph1.dc-chart, #bb-graph2.dc-chart, #cs-graph1.dc-chart, #cs-graph2.dc-chart, 
+#cf-graph1.dc-chart, #cf-graph2.dc-chart, #cb-graph1.dc-chart, #cb-graph2.dc-chart,
+#jkelly-graph1.dc-chart, #jkelly-graph2.dc-chart, #jk-graph1.dc-chart, #jk-graph2.dc-chart,
+#jf-graph1.dc-chart, #jf-graph2.dc-chart, #ms-graph1.dc-chart, #ms-graph2.dc-chart,
+#nt-graph1.dc-chart, #nt-graph2.dc-chart, #oc-graph1.dc-chart, #oc-graph2.dc-chart,
+#pb-graph1.dc-chart, #pb-graph2.dc-chart, #pf-graph1.dc-chart, #pf-graph2.dc-chart,
+#pm-graph1.dc-chart, #pm-graph2.dc-chart, #sm-graph1.dc-chart, #sm-graph2.dc-chart,
+#tc-graph1.dc-chart, #tc-graph2.dc-chart, #tm-graph1.dc-chart, #tm-graph2.dc-chart,
+#wa-graph1.dc-chart, #wa-graph2.dc-chart {
+    transform: scale(.65) translate(-29%, -20%);
+}
+
+/* ***********************  Index.html ******************** */
+
+#index-pie1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.key-section {
+    background-color: #ccced1;
+}
+
+.fa-key {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    transform: translateY(-400%);
+}
+
+.key-items {
+    padding-bottom: 50px;
+}
+
+.key-container {
+    display: flex;
+    justify-content: left;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.key-container a:hover {
+    color: grey;
+}
+
+#key-title {
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+.key-fg, .key-sf, .key-ff, .key-ind, .key-lab {
+    width:20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.key-fg {
+    background-color: #41a4e0;
+}
+
+.key-sf {
+    background-color: #204c46;
+}
+
+.key-ff {
+    background-color: #54a753;
+}
+
+.key-ind {
+    background-color: #8b8c8a;
+}
+
+.key-lab {
+    background-color: #d63a3d;
+}
+
+/* ***********************  About Page ******************** */
+
+.about-flex-container {
+    margin-top: 40px;
+}
+
+.about-text-container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.about-icon-container {
+    text-align: center;
+}
+
+.about-icon {
+    font-size: 100px;
+    margin: 20px 0 20px 0;
+    color: #3082db;
+}
+
+/* ***********************  Articles Page ******************** */
+
+.articles-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 5px;
+}
+
+.articles-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.articles-container p {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.articles-title {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.articles-description {
+    font-size: 12px
+}
+
+.articles-author {
+    font-size: 12px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #3082db;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .75s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* ***********************  Article Item Page ******************** */
+.article-item-image {
+    width: 100%;
+    height: 200px;
+}
+
+.article-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.article-item-box {
+    background-color: #fff;
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 1;
+    transform: translateY(-30%);
+    padding: 2.5px;
+}
+
+.article-item-title {
+    font-weight: 400;
+    font-size: 24px;
+    padding-top: 10px
+}
+
+.article-item-description {
+    font-size: 18px;
+}
+
+.article-item-author {
+    font-size: 16px;
+}
+
+.article-item-date {
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.article-item-content {
+    transform: translateY(-3%);
+    text-align: justify;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* ***********************  Councillor Item Page ******************** */
+
+.bio-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.bio-image {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bio-image img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    object-fit: cover;
+}
+
+.bio-contact {
+    text-align: left;
+    margin:0 auto;
+    margin-top: 10px
+}
+
+.bio-contact-title {
+    text-align: center;
+}
+
+.bio-contact-icon {
+    margin-right: 10px
+}
+
+.motions-title {
+    clear: both;
+}
+
+table {
+    margin: 0 auto;
+    max-width: 95%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+table, th, td {
+    border: 1px solid #939393;
+    border-collapse: collapse;
+    padding: 10px;
+}
+
+.table-status {
+    width: 150px;
+}
+
+/* ***********************  Councillors' List Page ******************** */
+
+.councillors-list-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 90%;
+    min-height: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    object-fit: cover;
+}
+
+.councillors-list-image:hover {
+    transform: scale(1.03);
+}
+
+.councillors-list-title {
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.councillors-list-text {
+    text-align: right;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* ***********************  Contact Page ******************** */
+
+.form-container {
+    width: 100%;
+    margin: 0 auto;
+   padding-bottom: 30px;
+}
+
+label {
+    margin: 10px 0 5px 0;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    border: solid 2px lightgrey;
+}
+
+.text-box {
+    width: 100%;
+    border: solid 2px lightgrey;
+    font-family: 'Roboto Slab', serif;
+}
+
+.submit-button {
+    width: 30%;
+    background-color: #D3D4D5;
+    color: #646464;
+    transition-duration: .75s;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.submit-button:hover {
+    background-color: #3082db;
+    color: #fff;
+    border-radius: 10px;
+}
+
+/* ***********************  Footer ******************** */
+
+.footer-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px 0 10px 0;
+    background-color: grey;
+}
+
+.footer-icon {
+    font-size: 30px;
+    padding: 10px;
+    color: #fff;
+}
