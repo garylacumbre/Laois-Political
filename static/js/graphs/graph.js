@@ -1,8 +1,9 @@
+// Import data file
 queue()
     .defer(d3.csv, "data/performance.csv")
     .await(makeGraphs);
     
-    
+// Generating the graphs    
     function makeGraphs (error, performanceData) {
         var ndx = crossfilter(performanceData);
         
@@ -14,7 +15,7 @@ queue()
         dc.renderAll();
     }   
     
-    
+// Creating the Pie Chart    
     function show_parties(ndx) {
         var dim = ndx.dimension(dc.pluck('Party')); 
         var group = dim.group();        
@@ -26,7 +27,8 @@ queue()
             .dimension(dim)
             .group(group);
     }     
-    
+
+// Attendance Bar Chart    
     function show_councillor_attendance(ndx) {
         var dim = ndx.dimension(dc.pluck('Initials')); 
         var group = dim.group().reduceSum(dc.pluck("Attendance"));
@@ -43,7 +45,8 @@ queue()
             .xAxisLabel("Attendance")
             .yAxis().ticks(20);
     }
-    
+
+// Motions Proposed Bar Chart    
     function show_motions_by_councillors(ndx) {
         var dim = ndx.dimension(dc.pluck('Initials')); 
         var group = dim.group().reduceSum(dc.pluck("Motions"));
@@ -60,7 +63,8 @@ queue()
             .xAxisLabel("Motions")
             .yAxis().ticks(10);
     }
-    
+
+// Successful Motions Bar Chart    
      function show_successful_motions(ndx) {
         var dim = ndx.dimension(dc.pluck('Initials')); 
         var group = dim.group().reduceSum(dc.pluck("Successful"));
@@ -77,7 +81,8 @@ queue()
             .xAxisLabel("Successfull Motions")
             .yAxis().ticks(10);
     }
-    
+
+// Expenses Bar Chart    
     function show_expenses(ndx) {
         var dim = ndx.dimension(dc.pluck('Initials')); 
         var group = dim.group().reduceSum(dc.pluck("Expenses"));
