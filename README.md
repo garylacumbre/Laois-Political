@@ -127,7 +127,7 @@ I chose the Master Branch source and did not customise the url as the website is
 
 The link to the site is:
 
-https://garylacumbre.github.io/exhibit-laois/index.html
+https://garylacumbre.github.io/Laois-Political/
 
 ## Credits
 
